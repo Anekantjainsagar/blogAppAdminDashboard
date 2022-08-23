@@ -21,9 +21,8 @@ const Navbar = () => {
         </div>
         <div className="search">
           <i className="fa-solid fa-magnifying-glass"></i>
-          <i className="fa-solid fa-bell"></i>
           <button className='post'><i className="fa-solid fa-plus"></i> NEW POST</button>
-          <img src="" alt="Profile" />
+          {/* <img src="" alt="Profile" /> */}
         </div>
       </section>
     </div>
