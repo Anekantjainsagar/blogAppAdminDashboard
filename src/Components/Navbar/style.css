@@ -8,16 +8,67 @@
 
 section.vertical{
     border-right: 1px solid rgb(235, 230, 230);
-    width: 9%;
+    width: 10%;
+}
+li{
+    list-style-type: none;
 }
 
-li{
-    list-style-type: circle;
+li:nth-child(1):before {
+    content: "\25EF";
+    margin-right: 0.4em;
+    font-size: 11px;
+    font-weight: 900;
+    color: #150a93;;
+    filter: blur(1px);
 }
+li:nth-child(1):before {
+    content: "\25EF";
+    margin-right: 0.4em;
+    font-size: 11px;
+    font-weight: 900;
+    color: #150a93;;
+    filter: blur(1px);
+}
+li:nth-child(2):before {
+    content: "\25EF";
+    margin-right: 0.4em;
+    font-size: 11px;
+    font-weight: 900;
+    color: #f0de0a;
+    filter: blur(1px);
+}
+li:nth-child(3):before {
+    content: "\25EF";
+    margin-right: 0.4em;
+    font-size: 11px;
+    font-weight: 900;
+    color: #1098e0;
+    filter: blur(1px);
+}
+li:nth-child(4):before {
+    content: "\25EF";
+    margin-right: 0.4em;
+    font-size: 11px;
+    font-weight: 900;
+    color: #09ea2b;
+    filter: blur(1px);
+}
+li:nth-child(5):before {
+    content: "\25EF";
+    margin-right: 0.4em;
+    font-size: 11px;
+    font-weight: 900;
+    color: #e90a3f;
+    filter: blur(1px);
+}
+
+
 
 .list{
     position: relative;
     margin: 1.5rem 0;
+    font-size: 14px;
 }
 
 .list::after{
@@ -28,6 +79,7 @@ li{
     left: -21px;
     width: 130px;
     background-color: rgb(235, 230, 230);
+    
 }
 
 .last{
@@ -76,4 +128,26 @@ section.horizontal{
     border:none;
     color: white;
     border-radius: 50px;
+}
+
+
+
+@media (max-width:1615px) and (min-width :1400px) {
+    .list::after{
+        content: "";
+
+        width: 110px;
+        
+        
+    }
+}
+@media (max-width : 1400px) {
+    .list::after{
+        content: "";
+        width: 100px;
+    }
+    section.vertical {
+        
+        width: 12%;
+    }
 }
